@@ -117,12 +117,20 @@ const Contact = () => {
           </button>
         </form>
 
-        <button
-          className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary mt-8'
-          onClick={handleLinkedInClick}
-        >
-          Visit My LinkedIn
-        </button>
+        <div className="flex gap-4 mt-8">
+          <button
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-151030'
+            onClick={handleLinkedInClick}
+          >
+            Visit My LinkedIn
+          </button>
+          <button
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-151030'
+            onClick={handleResumeClick}
+          >
+            Resume
+          </button>
+        </div>
       </motion.div>
 
       <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
