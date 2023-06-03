@@ -68,6 +68,10 @@ const Contact = () => {
     window.open("https://www.linkedin.com/in/jubaljacob/", "_blank");
   };
 
+  const handleResumeClick = () => {
+    window.open("https://drive.google.com/file/d/1akeDIf2R_WnZL23TFc_nm2GiLE96ADCB/view?usp=sharing", "_blank");
+  };
+
   return (
     <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-12 overflow-hidden`}>
       <motion.div variants={slideIn("left", "tween", 0.2, 1)} className='flex-[0.75] bg-black-100 p-8 rounded-2xl'>
@@ -111,7 +115,7 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-secondary'
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -119,19 +123,22 @@ const Contact = () => {
 
         <div className="flex gap-4 mt-8">
           <button
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-151030'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-secondary'
             onClick={handleLinkedInClick}
           >
             Visit My LinkedIn
           </button>
           <button
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-151030'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-secondary '
             onClick={handleResumeClick}
           >
             Resume
           </button>
         </div>
+
       </motion.div>
+
+      
 
       <motion.div variants={slideIn("right", "tween", 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
         <EarthCanvas />
