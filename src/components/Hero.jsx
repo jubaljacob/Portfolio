@@ -14,16 +14,14 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
       <div className="sketchfab-embed-wrapper">
-      <iframe title="Book Cover" 
-          frameborder="0" 
-          allowfullscreen 
-          mozallowfullscreen="true" 
-          webkitallowfullscreen="true" 
-          allow="autoplay; fullscreen; xr-spatial-tracking" 
-          xr-spatial-tracking execution-while-out-of-viewport 
-          execution-while-not-rendered 
-          web-share 
-          width="1620" 
+      <iframe 
+          frameborder="0"
+          allow="autoplay"
+          xr-spatial-tracking
+          execution-while-out-of-viewport
+          execution-while-not-rendered
+          web-share
+          width="1820" 
           height="780" 
           src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&preload=1&ui_hint=0"> 
           </iframe> 
