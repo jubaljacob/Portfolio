@@ -13,47 +13,7 @@ const Hero = () => {
 
   return (
     <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
-      <div className="sketchfab-embed-wrapper">
-      <iframe 
-          frameborder="0"
-          allow="autoplay"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          width="1820" 
-          height="780" 
-          src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&preload=1&ui_hint=0"> 
-          </iframe> 
-        <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
-          <a
-            href="https://sketchfab.com/3d-models/book-cover-c370f7e06e3c4b55ac35cf48008c77ff?utm_medium=embed&utm_campaign=share-popup&utm_content=c370f7e06e3c4b55ac35cf48008c77ff"
-            target="_blank"
-            rel="nofollow"
-            style={{ fontWeight: 'bold', color: '#050816' }}
-          >
-            
-          </a>{' '}
-          {' '}
-          <a
-            href="https://sketchfab.com/natcrab?utm_medium=embed&utm_campaign=share-popup&utm_content=c370f7e06e3c4b55ac35cf48008c77ff"
-            target="_blank"
-            rel="nofollow"
-            style={{ fontWeight: 'bold', color: '#050816' }}
-          >
-            
-          </a>{' '}
-          on{' '}
-          <a
-            href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c370f7e06e3c4b55ac35cf48008c77ff"
-            target="_blank"
-            rel="nofollow"
-            style={{ fontWeight: 'bold', color: '#050816' }}
-          >
-            
-          </a>
-        </p>
-      </div>
+      
 
        <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row  items-start gap-5`}
@@ -118,13 +78,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <div
-        className="absolute bottom-10 right-4 text-white bg-#1C0C27 p-4 rounded-lg"
-        style={{ fontSize: '13px', fontWeight: 'normal' }}
-      >
-        <p>move cursor to the sides and click to load the 3D model </p>
-        <p>click and drag to pan and scroll to zoom in and out</p>
-      </div>
+      
     </section>
   );
 };
