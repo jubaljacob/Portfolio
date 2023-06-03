@@ -14,21 +14,19 @@ const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto overflow-hidden`}>
       <div className="sketchfab-embed-wrapper">
-        <iframe
-          title="Book Cover"
-          frameborder="0"
-          allowfullscreen
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-          allow="autoplay; fullscreen; xr-spatial-tracking"
-          xr-spatial-tracking
-          execution-while-out-of-viewport
-          execution-while-not-rendered
-          web-share
-          width="2100"
-          height="955"
-          src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&preload=1&ui_hint=0"
-        ></iframe>
+      <iframe title="Book Cover" 
+          frameborder="0" 
+          allowfullscreen 
+          mozallowfullscreen="true" 
+          webkitallowfullscreen="true" 
+          allow="autoplay; fullscreen; xr-spatial-tracking" 
+          xr-spatial-tracking execution-while-out-of-viewport 
+          execution-while-not-rendered 
+          web-share 
+          width="1620" 
+          height="780" 
+          src="https://sketchfab.com/models/c370f7e06e3c4b55ac35cf48008c77ff/embed?autostart=1&preload=1&ui_hint=0"> 
+          </iframe> 
         <p style={{ fontSize: '13px', fontWeight: 'normal', margin: '5px', color: '#4A4A4A' }}>
           <a
             href="https://sketchfab.com/3d-models/book-cover-c370f7e06e3c4b55ac35cf48008c77ff?utm_medium=embed&utm_campaign=share-popup&utm_content=c370f7e06e3c4b55ac35cf48008c77ff"
